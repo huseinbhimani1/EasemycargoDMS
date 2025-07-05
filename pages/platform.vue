@@ -1,0 +1,1 @@
+<template><DocumentUploader layer="platform" /></template>

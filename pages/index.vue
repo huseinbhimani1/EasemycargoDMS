@@ -1,0 +1,1 @@
+<template><div><h1>DMS Dashboard</h1><NuxtLink to="/platform">Platform</NuxtLink> | <NuxtLink to="/organization">Organization</NuxtLink> | <NuxtLink to="/user">User</NuxtLink> | <NuxtLink to="/admin">Admin</NuxtLink></div></template>

@@ -1,0 +1,36 @@
+{
+  "platform": [
+    {
+      "name": "Platform Agreement",
+      "required": false
+    },
+    {
+      "name": "Privacy Policy",
+      "required": false
+    },
+    {
+      "name": "Adhar card",
+      "required": false
+    }
+  ],
+  "organization": [
+    {
+      "name": "GST Certificate",
+      "required": false
+    },
+    {
+      "name": "MSME Registration",
+      "required": false
+    }
+  ],
+  "user": [
+    {
+      "name": "ID Proof",
+      "required": false
+    },
+    {
+      "name": "Address Proof",
+      "required": true
+    }
+  ]
+}

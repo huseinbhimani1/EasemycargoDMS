@@ -1,0 +1,1 @@
+<template><NuxtLink to="/admin/config">Configure Docs</NuxtLink> | <NuxtLink to="/admin/all">View All Docs</NuxtLink></template>
