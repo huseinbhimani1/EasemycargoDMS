@@ -1,0 +1,1 @@
+import{_ as r}from"./C7pONOFW.js";import{_ as c,g as e,o as t}from"./BtseiMPM.js";const a={};function n(_,s){const o=r;return t(),e(o,{layer:"platform"})}const p=c(a,[["render",n]]);export{p as default};

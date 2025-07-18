@@ -1,0 +1,1 @@
+import{_ as n}from"./C7pONOFW.js";import{_ as r,g as a,o as c}from"./BtseiMPM.js";const e={};function t(_,s){const o=n;return c(),a(o,{layer:"organization"})}const m=r(e,[["render",t]]);export{m as default};
