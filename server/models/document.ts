@@ -5,6 +5,9 @@ const schema = new mongoose.Schema({
   fileUrl: String,
   required: Boolean,
   layer: String,
-  uploadedAt: Date
+  uploadedAt: Date,
+  content: Buffer, // Add content field for file data
+  tenantId: { type: String, required: true },
+  industryId: { type: String, required: true }
 })
 export default mongoose.models.Document || mongoose.model('Document', schema)

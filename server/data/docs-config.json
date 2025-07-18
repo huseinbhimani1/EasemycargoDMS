@@ -1,36 +1,48 @@
 {
-  "platform": [
-    {
-      "name": "Platform Agreement",
-      "required": false
+  "Adani": {
+    "Hotel": {
+      "required": [
+        {
+          "name": "GST Certificate"
+        }
+      ],
+      "optional": [
+        {
+          "name": "Platform Agreement"
+        },
+        {
+          "name": "Privacy Policy"
+        }
+      ]
     },
-    {
-      "name": "Privacy Policy",
-      "required": false
-    },
-    {
-      "name": "Adhar card",
-      "required": false
+    "Airport": {
+      "required": [
+        {
+          "name": "Trade License"
+        }
+      ],
+      "optional": [
+        {
+          "name": "Company Profile"
+        }
+      ]
     }
-  ],
-  "organization": [
-    {
-      "name": "GST Certificate",
-      "required": false
-    },
-    {
-      "name": "MSME Registration",
-      "required": false
+  },
+  "Adani1": {
+    "Hotel": {
+      "required": [
+        {
+          "name": "Adhar card"
+        }
+      ],
+      "optional": [
+        {
+          "name": "Platform Agreement"
+        },
+        {
+          "name": "Privacy Policy"
+        }
+      ]
     }
-  ],
-  "user": [
-    {
-      "name": "ID Proof",
-      "required": false
-    },
-    {
-      "name": "Address Proof",
-      "required": true
-    }
-  ]
+  }
 }

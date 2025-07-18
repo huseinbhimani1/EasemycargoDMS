@@ -3,39 +3,39 @@ import { Server } from 'node:http';
 import path, { resolve, dirname, join } from 'node:path';
 import nodeCrypto from 'node:crypto';
 import { parentPort, threadId } from 'node:worker_threads';
-import { defineEventHandler, handleCacheHeaders, splitCookiesString, createEvent, fetchWithEvent, isEvent, eventHandler, setHeaders, sendRedirect, proxyRequest, getRequestHeader, setResponseHeaders, setResponseStatus, send, getRequestHeaders, setResponseHeader, getRequestURL, getResponseHeader, getQuery as getQuery$1, readBody, createApp, createRouter as createRouter$1, toNodeListener, lazyEventHandler, getResponseStatus, createError, getRouterParam, getResponseStatusText } from 'file://C:/huseindata/bkptest/nuxt-dms-complete-full/node_modules/h3/dist/index.mjs';
-import { escapeHtml } from 'file://C:/huseindata/bkptest/nuxt-dms-complete-full/node_modules/@vue/shared/dist/shared.cjs.js';
+import { defineEventHandler, handleCacheHeaders, splitCookiesString, createEvent, fetchWithEvent, isEvent, eventHandler, setHeaders, sendRedirect, proxyRequest, getRequestHeader, setResponseHeaders, setResponseStatus, send, getRequestHeaders, setResponseHeader, getRequestURL, getResponseHeader, getQuery as getQuery$1, readBody, createApp, createRouter as createRouter$1, toNodeListener, lazyEventHandler, getResponseStatus, createError, getRouterParam, getResponseStatusText } from 'file://C:/huseindata/bkptest%20-%20Copy/nuxt-dms-complete-full/node_modules/h3/dist/index.mjs';
+import { escapeHtml } from 'file://C:/huseindata/bkptest%20-%20Copy/nuxt-dms-complete-full/node_modules/@vue/shared/dist/shared.cjs.js';
 import fs, { existsSync } from 'node:fs';
-import mongoose from 'file://C:/huseindata/bkptest/nuxt-dms-complete-full/node_modules/mongoose/index.js';
 import { readFile, mkdir, writeFile } from 'node:fs/promises';
-import { createRenderer, getRequestDependencies, getPreloadLinks, getPrefetchLinks } from 'file://C:/huseindata/bkptest/nuxt-dms-complete-full/node_modules/vue-bundle-renderer/dist/runtime.mjs';
-import { parseURL, withoutBase, joinURL, getQuery, withQuery, withTrailingSlash, joinRelativeURL } from 'file://C:/huseindata/bkptest/nuxt-dms-complete-full/node_modules/ufo/dist/index.mjs';
-import { renderToString } from 'file://C:/huseindata/bkptest/nuxt-dms-complete-full/node_modules/vue/server-renderer/index.mjs';
-import { klona } from 'file://C:/huseindata/bkptest/nuxt-dms-complete-full/node_modules/klona/dist/index.mjs';
-import defu, { defuFn } from 'file://C:/huseindata/bkptest/nuxt-dms-complete-full/node_modules/defu/dist/defu.mjs';
-import destr, { destr as destr$1 } from 'file://C:/huseindata/bkptest/nuxt-dms-complete-full/node_modules/destr/dist/index.mjs';
-import { snakeCase } from 'file://C:/huseindata/bkptest/nuxt-dms-complete-full/node_modules/scule/dist/index.mjs';
-import { createHead as createHead$1, propsToString, renderSSRHead } from 'file://C:/huseindata/bkptest/nuxt-dms-complete-full/node_modules/unhead/dist/server.mjs';
-import { stringify, uneval } from 'file://C:/huseindata/bkptest/nuxt-dms-complete-full/node_modules/devalue/index.js';
-import { isVNode, toValue, isRef } from 'file://C:/huseindata/bkptest/nuxt-dms-complete-full/node_modules/vue/index.mjs';
-import { DeprecationsPlugin, PromisesPlugin, TemplateParamsPlugin, AliasSortingPlugin } from 'file://C:/huseindata/bkptest/nuxt-dms-complete-full/node_modules/unhead/dist/plugins.mjs';
-import { createHooks } from 'file://C:/huseindata/bkptest/nuxt-dms-complete-full/node_modules/hookable/dist/index.mjs';
-import { createFetch, Headers as Headers$1 } from 'file://C:/huseindata/bkptest/nuxt-dms-complete-full/node_modules/ofetch/dist/node.mjs';
-import { fetchNodeRequestHandler, callNodeRequestHandler } from 'file://C:/huseindata/bkptest/nuxt-dms-complete-full/node_modules/node-mock-http/dist/index.mjs';
-import { createStorage, prefixStorage } from 'file://C:/huseindata/bkptest/nuxt-dms-complete-full/node_modules/unstorage/dist/index.mjs';
-import unstorage_47drivers_47fs from 'file://C:/huseindata/bkptest/nuxt-dms-complete-full/node_modules/unstorage/drivers/fs.mjs';
-import { digest } from 'file://C:/huseindata/bkptest/nuxt-dms-complete-full/node_modules/ohash/dist/index.mjs';
-import { toRouteMatcher, createRouter } from 'file://C:/huseindata/bkptest/nuxt-dms-complete-full/node_modules/radix3/dist/index.mjs';
-import consola, { consola as consola$1 } from 'file://C:/huseindata/bkptest/nuxt-dms-complete-full/node_modules/consola/dist/index.mjs';
-import { ErrorParser } from 'file://C:/huseindata/bkptest/nuxt-dms-complete-full/node_modules/youch-core/build/index.js';
-import { Youch } from 'file://C:/huseindata/bkptest/nuxt-dms-complete-full/node_modules/nitropack/node_modules/youch/build/index.js';
-import { SourceMapConsumer } from 'file://C:/huseindata/bkptest/nuxt-dms-complete-full/node_modules/source-map/source-map.js';
+import mongoose from 'file://C:/huseindata/bkptest%20-%20Copy/nuxt-dms-complete-full/node_modules/mongoose/index.js';
+import { createRenderer, getRequestDependencies, getPreloadLinks, getPrefetchLinks } from 'file://C:/huseindata/bkptest%20-%20Copy/nuxt-dms-complete-full/node_modules/vue-bundle-renderer/dist/runtime.mjs';
+import { parseURL, withoutBase, joinURL, getQuery, withQuery, withTrailingSlash, joinRelativeURL } from 'file://C:/huseindata/bkptest%20-%20Copy/nuxt-dms-complete-full/node_modules/ufo/dist/index.mjs';
+import { renderToString } from 'file://C:/huseindata/bkptest%20-%20Copy/nuxt-dms-complete-full/node_modules/vue/server-renderer/index.mjs';
+import { klona } from 'file://C:/huseindata/bkptest%20-%20Copy/nuxt-dms-complete-full/node_modules/klona/dist/index.mjs';
+import defu, { defuFn } from 'file://C:/huseindata/bkptest%20-%20Copy/nuxt-dms-complete-full/node_modules/defu/dist/defu.mjs';
+import destr, { destr as destr$1 } from 'file://C:/huseindata/bkptest%20-%20Copy/nuxt-dms-complete-full/node_modules/destr/dist/index.mjs';
+import { snakeCase } from 'file://C:/huseindata/bkptest%20-%20Copy/nuxt-dms-complete-full/node_modules/scule/dist/index.mjs';
+import { createHead as createHead$1, propsToString, renderSSRHead } from 'file://C:/huseindata/bkptest%20-%20Copy/nuxt-dms-complete-full/node_modules/unhead/dist/server.mjs';
+import { stringify, uneval } from 'file://C:/huseindata/bkptest%20-%20Copy/nuxt-dms-complete-full/node_modules/devalue/index.js';
+import { isVNode, toValue, isRef } from 'file://C:/huseindata/bkptest%20-%20Copy/nuxt-dms-complete-full/node_modules/vue/index.mjs';
+import { DeprecationsPlugin, PromisesPlugin, TemplateParamsPlugin, AliasSortingPlugin } from 'file://C:/huseindata/bkptest%20-%20Copy/nuxt-dms-complete-full/node_modules/unhead/dist/plugins.mjs';
+import { createHooks } from 'file://C:/huseindata/bkptest%20-%20Copy/nuxt-dms-complete-full/node_modules/hookable/dist/index.mjs';
+import { createFetch, Headers as Headers$1 } from 'file://C:/huseindata/bkptest%20-%20Copy/nuxt-dms-complete-full/node_modules/ofetch/dist/node.mjs';
+import { fetchNodeRequestHandler, callNodeRequestHandler } from 'file://C:/huseindata/bkptest%20-%20Copy/nuxt-dms-complete-full/node_modules/node-mock-http/dist/index.mjs';
+import { createStorage, prefixStorage } from 'file://C:/huseindata/bkptest%20-%20Copy/nuxt-dms-complete-full/node_modules/unstorage/dist/index.mjs';
+import unstorage_47drivers_47fs from 'file://C:/huseindata/bkptest%20-%20Copy/nuxt-dms-complete-full/node_modules/unstorage/drivers/fs.mjs';
+import { digest } from 'file://C:/huseindata/bkptest%20-%20Copy/nuxt-dms-complete-full/node_modules/ohash/dist/index.mjs';
+import { toRouteMatcher, createRouter } from 'file://C:/huseindata/bkptest%20-%20Copy/nuxt-dms-complete-full/node_modules/radix3/dist/index.mjs';
+import consola, { consola as consola$1 } from 'file://C:/huseindata/bkptest%20-%20Copy/nuxt-dms-complete-full/node_modules/consola/dist/index.mjs';
+import { ErrorParser } from 'file://C:/huseindata/bkptest%20-%20Copy/nuxt-dms-complete-full/node_modules/youch-core/build/index.js';
+import { Youch } from 'file://C:/huseindata/bkptest%20-%20Copy/nuxt-dms-complete-full/node_modules/nitropack/node_modules/youch/build/index.js';
+import { SourceMapConsumer } from 'file://C:/huseindata/bkptest%20-%20Copy/nuxt-dms-complete-full/node_modules/source-map/source-map.js';
 import { AsyncLocalStorage } from 'node:async_hooks';
-import { getContext } from 'file://C:/huseindata/bkptest/nuxt-dms-complete-full/node_modules/unctx/dist/index.mjs';
-import { captureRawStackTrace, parseRawStackTrace } from 'file://C:/huseindata/bkptest/nuxt-dms-complete-full/node_modules/errx/dist/index.js';
-import { walkResolver } from 'file://C:/huseindata/bkptest/nuxt-dms-complete-full/node_modules/unhead/dist/utils.mjs';
+import { getContext } from 'file://C:/huseindata/bkptest%20-%20Copy/nuxt-dms-complete-full/node_modules/unctx/dist/index.mjs';
+import { captureRawStackTrace, parseRawStackTrace } from 'file://C:/huseindata/bkptest%20-%20Copy/nuxt-dms-complete-full/node_modules/errx/dist/index.js';
+import { walkResolver } from 'file://C:/huseindata/bkptest%20-%20Copy/nuxt-dms-complete-full/node_modules/unhead/dist/utils.mjs';
 
-const serverAssets = [{"baseName":"server","dir":"C:/huseindata/bkptest/nuxt-dms-complete-full/server/assets"}];
+const serverAssets = [{"baseName":"server","dir":"C:/huseindata/bkptest - Copy/nuxt-dms-complete-full/server/assets"}];
 
 const assets = createStorage();
 
@@ -47,11 +47,11 @@ const storage = createStorage({});
 
 storage.mount('/assets', assets);
 
-storage.mount('root', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"C:/huseindata/bkptest/nuxt-dms-complete-full","watchOptions":{"ignored":[null]}}));
-storage.mount('src', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"C:/huseindata/bkptest/nuxt-dms-complete-full/server","watchOptions":{"ignored":[null]}}));
-storage.mount('build', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"C:/huseindata/bkptest/nuxt-dms-complete-full/.nuxt"}));
-storage.mount('cache', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"C:/huseindata/bkptest/nuxt-dms-complete-full/.nuxt/cache"}));
-storage.mount('data', unstorage_47drivers_47fs({"driver":"fs","base":"C:/huseindata/bkptest/nuxt-dms-complete-full/.data/kv"}));
+storage.mount('root', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"C:/huseindata/bkptest - Copy/nuxt-dms-complete-full","watchOptions":{"ignored":[null]}}));
+storage.mount('src', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"C:/huseindata/bkptest - Copy/nuxt-dms-complete-full/server","watchOptions":{"ignored":[null]}}));
+storage.mount('build', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"C:/huseindata/bkptest - Copy/nuxt-dms-complete-full/.nuxt"}));
+storage.mount('cache', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"C:/huseindata/bkptest - Copy/nuxt-dms-complete-full/.nuxt/cache"}));
+storage.mount('data', unstorage_47drivers_47fs({"driver":"fs","base":"C:/huseindata/bkptest - Copy/nuxt-dms-complete-full/.data/kv"}));
 
 function useStorage(base = "") {
   return base ? prefixStorage(storage, base) : storage;
@@ -1007,13 +1007,13 @@ if (!window.__NUXT_DEVTOOLS_TIME_METRIC__) {
 window.__NUXT_DEVTOOLS_TIME_METRIC__.appInit = Date.now()
 `;
 
-const _KGuBLNlwfhGD7IgkvLODXz7mXZophbDrsULXqBjN3S4 = (function(nitro) {
+const _mMgq1llvXXW8KQkh4OIyZcsx1hmiyrOzTh1coSMTUew = (function(nitro) {
   nitro.hooks.hook("render:html", (htmlContext) => {
     htmlContext.head.push(`<script>${script}<\/script>`);
   });
 });
 
-const rootDir = "C:/huseindata/bkptest/nuxt-dms-complete-full";
+const rootDir = "C:/huseindata/bkptest - Copy/nuxt-dms-complete-full";
 
 const appHead = {"meta":[{"name":"viewport","content":"width=device-width, initial-scale=1"},{"charset":"utf-8"}],"link":[],"style":[],"script":[],"noscript":[]};
 
@@ -1032,7 +1032,7 @@ const devReducers = {
   URL: (data) => data instanceof URL ? data.toString() : void 0
 };
 const asyncContext = getContext("nuxt-dev", { asyncContext: true, AsyncLocalStorage });
-const _m6k7kCf5I4NqdUwOOn8FzWVCsjSlQMaZos1aAAzNA = (nitroApp) => {
+const _u8i6p6uHnT_IP8CJfT6e6lonCWCi8Q1SbfxGEOVwf14 = (nitroApp) => {
   const handler = nitroApp.h3App.handler;
   nitroApp.h3App.handler = (event) => {
     return asyncContext.callAsync({ logs: [], event }, () => handler(event));
@@ -1102,8 +1102,8 @@ function onConsoleLog(callback) {
 }
 
 const plugins = [
-  _KGuBLNlwfhGD7IgkvLODXz7mXZophbDrsULXqBjN3S4,
-_m6k7kCf5I4NqdUwOOn8FzWVCsjSlQMaZos1aAAzNA
+  _mMgq1llvXXW8KQkh4OIyZcsx1hmiyrOzTh1coSMTUew,
+_u8i6p6uHnT_IP8CJfT6e6lonCWCi8Q1SbfxGEOVwf14
 ];
 
 const VueResolver = (_, value) => {
@@ -1177,8 +1177,8 @@ function publicAssetsURL(...path) {
 
 const APP_ROOT_OPEN_TAG = `<${appRootTag}${propsToString(appRootAttrs)}>`;
 const APP_ROOT_CLOSE_TAG = `</${appRootTag}>`;
-const getServerEntry = () => import('file://C:/huseindata/bkptest/nuxt-dms-complete-full/.nuxt/dist/server/server.mjs').then((r) => r.default || r);
-const getClientManifest = () => import('file://C:/huseindata/bkptest/nuxt-dms-complete-full/.nuxt/dist/server/client.manifest.mjs').then((r) => r.default || r).then((r) => typeof r === "function" ? r() : r);
+const getServerEntry = () => import('file://C:/huseindata/bkptest%20-%20Copy/nuxt-dms-complete-full/.nuxt/dist/server/server.mjs').then((r) => r.default || r);
+const getClientManifest = () => import('file://C:/huseindata/bkptest%20-%20Copy/nuxt-dms-complete-full/.nuxt/dist/server/client.manifest.mjs').then((r) => r.default || r).then((r) => typeof r === "function" ? r() : r);
 const getSSRRenderer = lazyCachedFunction(async () => {
   const manifest = await getClientManifest();
   if (!manifest) {
@@ -1424,24 +1424,26 @@ async function getIslandContext(event) {
   return ctx;
 }
 
-const _lazy_zV6xig = () => Promise.resolve().then(function () { return docsConfig_get$1; });
-const _lazy_dFxhO3 = () => Promise.resolve().then(function () { return docsConfig_post$1; });
-const _lazy_5zFL2I = () => Promise.resolve().then(function () { return _id__delete$1; });
-const _lazy_1y5C2H = () => Promise.resolve().then(function () { return index_get$1; });
-const _lazy_QUAWsz = () => Promise.resolve().then(function () { return index_post$1; });
-const _lazy_TwV91y = () => Promise.resolve().then(function () { return upload_post$1; });
-const _lazy_JCx4dQ = () => Promise.resolve().then(function () { return renderer$1; });
+const _lazy_AhFNbL = () => Promise.resolve().then(function () { return docsConfig_get$1; });
+const _lazy_PS8mf7 = () => Promise.resolve().then(function () { return docsConfig_post$1; });
+const _lazy_Mua6BY = () => Promise.resolve().then(function () { return _id__delete$1; });
+const _lazy_fp46sZ = () => Promise.resolve().then(function () { return _id__get$1; });
+const _lazy_4fbIuf = () => Promise.resolve().then(function () { return index_get$1; });
+const _lazy_wTGHd_ = () => Promise.resolve().then(function () { return index_post$1; });
+const _lazy_GeUtb6 = () => Promise.resolve().then(function () { return upload_post$1; });
+const _lazy_HEjpTb = () => Promise.resolve().then(function () { return renderer$1; });
 
 const handlers = [
-  { route: '/api/docs-config', handler: _lazy_zV6xig, lazy: true, middleware: false, method: "get" },
-  { route: '/api/docs-config', handler: _lazy_dFxhO3, lazy: true, middleware: false, method: "post" },
-  { route: '/api/docs/:id', handler: _lazy_5zFL2I, lazy: true, middleware: false, method: "delete" },
-  { route: '/api/docs', handler: _lazy_1y5C2H, lazy: true, middleware: false, method: "get" },
-  { route: '/api/docs', handler: _lazy_QUAWsz, lazy: true, middleware: false, method: "post" },
-  { route: '/api/upload', handler: _lazy_TwV91y, lazy: true, middleware: false, method: "post" },
-  { route: '/__nuxt_error', handler: _lazy_JCx4dQ, lazy: true, middleware: false, method: undefined },
+  { route: '/api/docs-config', handler: _lazy_AhFNbL, lazy: true, middleware: false, method: "get" },
+  { route: '/api/docs-config', handler: _lazy_PS8mf7, lazy: true, middleware: false, method: "post" },
+  { route: '/api/docs/:id', handler: _lazy_Mua6BY, lazy: true, middleware: false, method: "delete" },
+  { route: '/api/docs/:id', handler: _lazy_fp46sZ, lazy: true, middleware: false, method: "get" },
+  { route: '/api/docs', handler: _lazy_4fbIuf, lazy: true, middleware: false, method: "get" },
+  { route: '/api/docs', handler: _lazy_wTGHd_, lazy: true, middleware: false, method: "post" },
+  { route: '/api/upload', handler: _lazy_GeUtb6, lazy: true, middleware: false, method: "post" },
+  { route: '/__nuxt_error', handler: _lazy_HEjpTb, lazy: true, middleware: false, method: undefined },
   { route: '/__nuxt_island/**', handler: _SxA8c9, lazy: false, middleware: false, method: undefined },
-  { route: '/**', handler: _lazy_JCx4dQ, lazy: true, middleware: false, method: undefined }
+  { route: '/**', handler: _lazy_HEjpTb, lazy: true, middleware: false, method: undefined }
 ];
 
 function createNitroApp() {
@@ -1799,7 +1801,11 @@ const schema = new mongoose.Schema({
   fileUrl: String,
   required: Boolean,
   layer: String,
-  uploadedAt: Date
+  uploadedAt: Date,
+  content: Buffer,
+  // Add content field for file data
+  tenantId: { type: String, required: true },
+  industryId: { type: String, required: true }
 });
 const Document = mongoose.models.Document || mongoose.model("Document", schema);
 
@@ -1815,10 +1821,33 @@ const _id__delete$1 = /*#__PURE__*/Object.freeze({
   default: _id__delete
 });
 
+const _id__get = defineEventHandler(async (event) => {
+  await connectDB();
+  const params = event.context && event.context.params ? event.context.params : {};
+  const id = params.id;
+  if (!id) {
+    event.res.statusCode = 400;
+    return { error: "Missing document id" };
+  }
+  const doc = await Document.findById(id);
+  if (!doc || !doc.content) {
+    event.res.statusCode = 404;
+    return { error: "File not found" };
+  }
+  event.res.setHeader("Content-Type", "application/octet-stream");
+  event.res.setHeader("Content-Disposition", `attachment; filename="${doc.name || "file"}"`);
+  return send(event, doc.content);
+});
+
+const _id__get$1 = /*#__PURE__*/Object.freeze({
+  __proto__: null,
+  default: _id__get
+});
+
 const index_get = defineEventHandler(async () => {
   await connectDB();
   const docs = await Document.find({});
-  return docs;
+  return { documents: docs };
 });
 
 const index_get$1 = /*#__PURE__*/Object.freeze({
@@ -1829,7 +1858,18 @@ const index_get$1 = /*#__PURE__*/Object.freeze({
 const index_post = defineEventHandler(async (event) => {
   await connectDB();
   const body = await readBody(event);
-  const doc = await Document.create(body);
+  let content;
+  if (body.fileUrl) {
+    try {
+      let filePath = body.fileUrl.startsWith("/") ? body.fileUrl.slice(1) : body.fileUrl;
+      filePath = path.resolve(filePath);
+      const fileData = await readFile(filePath);
+      content = Buffer.isBuffer(fileData) ? fileData : Buffer.from(fileData);
+    } catch (e) {
+      content = void 0;
+    }
+  }
+  const doc = await Document.create({ ...body, content });
   return { success: true, doc };
 });
 
@@ -1840,12 +1880,12 @@ const index_post$1 = /*#__PURE__*/Object.freeze({
 
 const config = { api: { bodyParser: false } };
 const upload_post = defineEventHandler(async (event) => {
-  const formidable = (await import('file://C:/huseindata/bkptest/nuxt-dms-complete-full/node_modules/formidable/src/index.js')).default;
+  const formidable = (await import('file://C:/huseindata/bkptest%20-%20Copy/nuxt-dms-complete-full/node_modules/formidable/src/index.js')).default;
   const form = formidable({ multiples: false });
-  const files = await new Promise((resolve, reject) => {
-    form.parse(event.node.req, (err, _fields, files2) => {
+  const { fields, files } = await new Promise((resolve, reject) => {
+    form.parse(event.node.req, (err, fields2, files2) => {
       if (err) reject(err);
-      else resolve(files2);
+      else resolve({ fields: fields2, files: files2 });
     });
   });
   const file = Array.isArray(files.file) ? files.file[0] : files.file;
@@ -1854,7 +1894,19 @@ const upload_post = defineEventHandler(async (event) => {
   if (!existsSync(uploadDir)) await mkdir(uploadDir, { recursive: true });
   const uploadPath = path.join(uploadDir, file.originalFilename);
   await writeFile(uploadPath, data);
-  return { url: "/uploads/" + file.originalFilename };
+  const tenantId = fields.tenantId || null;
+  const industryId = fields.industryId || null;
+  const fileUrl = "/uploads/" + file.originalFilename;
+  await connectDB();
+  await Document.create({
+    name: file.originalFilename,
+    fileUrl,
+    uploadedAt: /* @__PURE__ */ new Date(),
+    tenantId,
+    industryId
+    // Optionally: content: data
+  });
+  return { url: fileUrl };
 });
 
 const upload_post$1 = /*#__PURE__*/Object.freeze({

@@ -4,7 +4,7 @@
     <input v-model="search" placeholder="Search by name..." style="margin-bottom: 1em; padding: 6px;" />
     <select v-model="filterLayer" style="margin-left: 10px;">
       <option value="">All Layers</option>
-      <option value="platform">Platform</option>
+      <option value="tenant">Tenant</option>
       <option value="organization">Organization</option>
       <option value="user">User</option>
     </select>
