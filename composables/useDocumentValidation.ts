@@ -14,7 +14,7 @@ export async function useDocumentValidation(tenant: string, industry: string) {
     const requiredDocs = industryConfig.required || []
     const optionalDocs = industryConfig.optional || []
     console.log('required', requiredDocs)
-    const uploadedDocs = allDocs.filter((doc: any) => doc.tenant === tenant && doc.industry === industry)
+    const uploadedDocs = allDocs.filter((doc: any) => doc.tenantId === tenant && doc.industryId === industry)
     console.log('uploadedDocs', uploadedDocs)
     const missing = requiredDocs.filter((req: any) => {
       return !uploadedDocs.some((uploaded: any) => uploaded.name === req.name)

@@ -70,6 +70,9 @@ async function uploadFile(docName) {
   try {
     const formData = new FormData()
     formData.append('file', selectedFiles.value[docName])
+    formData.append('tenantId', tenantId)
+    formData.append('industryId', industryId)
+    formData.append('name', docName)
     const res = await fetch('/api/upload', {
       method: 'POST',
       body: formData

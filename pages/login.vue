@@ -92,7 +92,7 @@ async function fetchUploadedDocs() {
     const res = await fetch('/api/docs')
     const data = await res.json()
     uploadedDocs.value = (data.documents || []).filter(
-      d => d.tenant === tenant.value && d.industry === industry.value
+      d => d.tenantId === tenant.value && d.industryId === industry.value
     )
   } catch {
     uploadedDocs.value = []
