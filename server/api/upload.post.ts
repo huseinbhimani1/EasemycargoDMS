@@ -28,18 +28,25 @@ export default defineEventHandler(async (event) => {
   await writeFile(uploadPath, data)
 
   // Prepare metadata
-  const tenantId = fields.tenantId || null
-  const industryId = fields.industryId || null
+  let tenantId = fields.tenantId;
+  let industryId = fields.industryId;
+  if (Array.isArray(tenantId)) tenantId = tenantId[0];
+  if (Array.isArray(industryId)) industryId = industryId[0];
+  const tenantIdStr = tenantId ? String(tenantId) : null;
+  const industryIdStr = industryId ? String(industryId) : null;
   const fileUrl = '/uploads/' + file.originalFilename
 
   // Save metadata to MongoDB
   await connectDB()
+  let docName = fields.name;
+  if (Array.isArray(docName)) docName = docName[0];
+  const nameStr = docName ? String(docName) : file.originalFilename;
   await Document.create({
-    name: file.originalFilename,
+    name: nameStr,
     fileUrl,
     uploadedAt: new Date(),
-    tenantId,
-    industryId
+    tenantId: tenantIdStr,
+    industryId: industryIdStr
     // Optionally: content: data
   })
 
